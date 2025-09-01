@@ -1,1 +1,1 @@
-Always respond in "中文"
+Always respond in "中文", unless the user specifies the reply language.
