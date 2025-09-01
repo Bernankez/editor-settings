@@ -1,0 +1,139 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // color theme
+  "buffer_font_family": "Maple Mono NL NF CN",
+  "buffer_font_fallbacks": [
+    "Menlo",
+    "Monaco",
+    "Courier New",
+    "monospace"
+  ],
+  "buffer_font_size": 18,
+  "icon_theme": {
+    "mode": "system",
+    "light": "JetBrains New UI Icons (Light)",
+    "dark": "JetBrains New UI Icons (Dark)"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Vitesse Refined Light",
+    "dark": "Vitesse Refined Dark"
+  },
+  "ui_font_size": 16,
+  // editor
+  "outline_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1500
+    }
+  },
+  "auto_indent_on_paste": false,
+  "base_keymap": "VSCode",
+  "buffer_font_features": {
+    "calt": 0
+  },
+  "ensure_final_newline_on_save": false,
+  "inlay_hints": {
+    "enabled": true,
+    "show_value_hints": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50,
+    "toggle_on_modifiers_press": {
+      "control": false,
+      "alt": false,
+      "shift": false,
+      "platform": false,
+      "function": false
+    }
+  },
+  "linked_edits": true,
+  "minimap": {
+    "show": "auto",
+    "thumb": "always"
+  },
+  "show_whitespaces": "boundary",
+  "tab_size": 2,
+  "terminal": {
+    "font_family": "Menlo",
+    "font_fallbacks": [
+      "Monaco",
+      "Courier New",
+      "monospace"
+    ],
+    "font_size": 15.0
+  },
+  "use_system_path_prompts": true,
+  // lint
+  "format_on_save": "language_server",
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
+  },
+  // ai
+  "agent": {
+    "use_modifier_to_send": true,
+    "default_model": {
+      "provider": "OneHub",
+      "model": "gebmini-2.5-flash"
+    },
+    "dock": "left"
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "features": {
+    "edit_prediction_provider": "supermaven"
+  },
+  "language_models": {
+    "openai_compatible": {
+      "OneHub": {
+        "api_url": "https://onehub.keke.cc/v1",
+        "available_models": [
+          {
+            "name": "gemini-2.5-flash",
+            "display_name": null,
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "show_edit_predictions": true,
+  // file associations
+  "file_types": {
+    "jsonc": [
+      "*.json"
+    ]
+  }
+}
