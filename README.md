@@ -9,7 +9,7 @@
 
 <br>
 <p align="center">
-  <samp>Preview</samp><br><br>
+  <samp>VSCode Preview</samp><br><br>
   <img src="./vscode-preview.png">
 </p>
 
@@ -17,11 +17,9 @@
 
 [`.zed/settings.json`](.zed/settings.json) Settings<br>
 
-- [Fonts](./font)
-
 <br>
 <p align="center">
-  <samp>Preview</samp><br><br>
+  <samp>Zed Preview</samp><br><br>
   <img src="./zed-preview.png">
 </p>
 
@@ -35,3 +33,4 @@
     </sub>
 </p>
 
+- [Fonts](./font)
