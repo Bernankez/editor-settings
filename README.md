@@ -23,6 +23,8 @@
   <img src="./zed-preview.png">
 </p>
 
+- [Fonts](./font)
+
 <br>
 <p align="center">
     <sub>
@@ -32,5 +34,3 @@
       Product Icons | <a href="https://github.com/antfu/vscode-icons-carbon">Carbon</a>
     </sub>
 </p>
-
-- [Fonts](./font)
