@@ -80,7 +80,6 @@
   },
   "use_system_path_prompts": true,
   // lint
-  "format_on_save": "language_server",
   "formatter": {
     "code_actions": {
       "source.fixAll.eslint": true
