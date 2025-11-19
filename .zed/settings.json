@@ -8,13 +8,8 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // color theme
-  "buffer_font_family": "Maple Mono NL NF CN",
-  "buffer_font_fallbacks": [
-    "Menlo",
-    "Monaco",
-    "Courier New",
-    "monospace"
-  ],
+  "buffer_font_family": "Maple Mono Normal NL NF CN",
+  "buffer_font_fallbacks": ["Menlo", "Monaco", "Courier New", "monospace"],
   "buffer_font_size": 18,
   "icon_theme": {
     "mode": "system",
@@ -71,19 +66,13 @@
   "tab_size": 2,
   "terminal": {
     "font_family": "Menlo",
-    "font_fallbacks": [
-      "Monaco",
-      "Courier New",
-      "monospace"
-    ],
+    "font_fallbacks": ["Monaco", "Courier New", "monospace"],
     "font_size": 15.0
   },
   "use_system_path_prompts": true,
   // lint
-  "formatter": {
-    "code_actions": {
-      "source.fixAll.eslint": true
-    }
+  "code_actions_on_format": {
+    "source.fixAll.eslint": true
   },
   // ai
   "agent": {
@@ -131,8 +120,6 @@
   "show_edit_predictions": true,
   // file associations
   "file_types": {
-    "jsonc": [
-      "*.json"
-    ]
+    "jsonc": ["*.json"]
   }
 }
