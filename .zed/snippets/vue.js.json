@@ -1,0 +1,15 @@
+{
+  "vue-script-setup": {
+    "prefix": "<te",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "$0",
+      "</template>",
+      ""
+    ]
+  }
+}

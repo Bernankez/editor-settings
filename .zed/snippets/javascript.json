@@ -1,0 +1,23 @@
+{
+  "debug": {
+    "prefix": "db",
+    "body": "watchEffect(() => {\n  console.log($0);\n});"
+  },
+  "console.log": {
+    "prefix": ["clg", "conso"],
+    "body": "console.log($1)"
+  },
+  "console.warn": {
+    "prefix": ["clw"],
+    "body": "console.warn($1)"
+  },
+  "if-vitest": {
+    "prefix": "ifv",
+    "body": [
+      "if (import.meta.vitest) {",
+      "  const { describe, it, expect } = import.meta.vitest",
+      "  ${1}",
+      "}"
+    ]
+  }
+}
