@@ -29,6 +29,7 @@
         // "stylelint.vscode-stylelint", // lint for css // sunset. I'm not using it
         "yoavbls.pretty-ts-errors", // friendly ts error prompt
         "antfu.goto-alias", // go to defination alias for auto-import
+        "antfu.pnpm-catalog-lens", // show versions inline for `catalog:` fields
         // markdown
         "Nuxt.mdc",
         "unifiedjs.vscode-mdx",
