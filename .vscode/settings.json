@@ -47,6 +47,7 @@
   "workbench.tree.expandMode": "singleClick", // 单击展开树
   "workbench.tree.indent": 10, // 树缩进
   "extensions.autoUpdate": "onlyEnabledExtensions",
+  // "extensions.gallery.serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery", // Cursor only
   "extensions.ignoreRecommendations": true, // 不显示建议扩展
   "files.eol": "\n", // 行尾字符, LF
   "files.insertFinalNewline": false, // 文件末尾插入新行
@@ -84,7 +85,7 @@
   "prettier.enable": false,
   "editor.formatOnSave": false,
   // eslint flat config support
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
   // auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -211,6 +212,8 @@
       "text": "TODO"
     }
   ],
+  // vitest
+  // "vitest.shellType": "terminal", // windows only see: https://github.com/vitest-dev/vscode/issues/486
   // volar
   "vue.codeActions.enabled": true,
   // 状态栏不显示name casing信息
