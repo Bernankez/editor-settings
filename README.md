@@ -1,4 +1,6 @@
-<samp><b>Cole's Editor Settings</b></samp>
+<h2><samp>Cole's Editor Settings</samp></h2>
+
+<samp><i>With this config, you can achieve a consistent experience across VSCode-like editors such as Cursor, Windsurf, Antigravity, and others.</i></samp>
 
 - VSCode (extends [antfu/vscode-settings](https://github.com/antfu/vscode-settings))
 
