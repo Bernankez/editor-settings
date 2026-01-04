@@ -1,5 +1,5 @@
 {
-  // color theme
+  // #region color theme
   "workbench.colorTheme": "Vitesse Light",
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.preferredLightColorTheme": "Vitesse Light",
@@ -9,13 +9,14 @@
   "editor.fontFamily": "Maple Mono SC NF, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 18,
   "editor.lineHeight": 1.6,
-  // editor
+  // #endregion
+  // #region editor
   "editor.accessibilitySupport": "auto",
   "editor.acceptSuggestionOnCommitCharacter": false, // 输入符号时不把建议上屏
   "editor.cursorSmoothCaretAnimation": "on", // 平滑光标动画
   "editor.find.addExtraSpaceOnTop": true, // 查找框出现时不挡视线
   "editor.formatOnPaste": false, // 粘贴时格式化
-  "editor.gotoLocation.multipleDefinitions": "goto", // 控制存在多个目标位置时"转到定义"命令的行为。goto: 转到主结果，并对其他结果启用无速览导航
+  "editor.gotoLocation.multipleDefinitions": "goto", // "Goto definition alias" requires
   "editor.guides.bracketPairs": "active", // 类似Bracket Pair
   "editor.hover.above": false,
   "editor.inlineSuggest.enabled": true, // 编辑器显示内联建议, Copilot给的代码提示就属于inline suggestion
@@ -34,6 +35,7 @@
   "explorer.confirmDelete": false, // 删除文件时不确认
   "files.autoSave": "afterDelay", // 文件延迟保存
   "files.autoSaveDelay": 1500, // 延迟保存时间
+  "http.proxy": "http://127.0.0.1:7890", // 启动代理时开启
   "window.autoDetectColorScheme": true, // 自动深色模式
   "window.commandCenter": false, // 命令中心
   "window.dialogStyle": "custom", // 对话框外观, 微软风格
@@ -47,7 +49,6 @@
   "workbench.tree.expandMode": "singleClick", // 单击展开树
   "workbench.tree.indent": 10, // 树缩进
   "extensions.autoUpdate": "onlyEnabledExtensions",
-  // "extensions.gallery.serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery", // Cursor only
   "extensions.ignoreRecommendations": true, // 不显示建议扩展
   "files.eol": "\n", // 行尾字符, LF
   "files.insertFinalNewline": false, // 文件末尾插入新行
@@ -81,11 +82,10 @@
     "**/yarn.lock": true,
     "**/*.code-search": true
   },
-  // lint
+  // #endregion
+  // #region lint
   "prettier.enable": false,
   "editor.formatOnSave": false,
-  // eslint flat config support
-  "eslint.useFlatConfig": true,
   // auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -122,20 +122,21 @@
     "jsonc",
     "yaml",
     "toml",
-    "astro"
+    "astro",
+    "css",
+    "pcss",
+    "less",
+    "scss"
   ],
   // disable to prevent both VS Code's built-in linters and Stylelint from reporting the same errors
-  "css.validate": false,
+  "css.validate": true,
   // "scss.validate": false,
   // "less.validate": false,
-  "stylelint.validate": [
-    "css",
-    "postcss",
-    "vue",
-    "html"
-    // and other extensions you would like to lint
-  ],
-  // extensions
+  // #endregion
+  // #region ai
+  "chat.mcp.gallery.enabled": true,
+  // #endregion
+  // #region extensions
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
   "emmet.showExpandedAbbreviation": "never", // 将展开的Emmet缩写作为建议进行显示
@@ -146,7 +147,7 @@
   "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint", "Stylelint"],
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
-  "cSpell.userWords": ["nuxt", "gsap", "antfu", "bernankez"],
+  "cSpell.userWords": ["nuxt", "gsap", "antfu", "bernankez", "unocss", "astro"],
   "css.lint.hexColorLength": "ignore",
   "gitlens.codeLens.authors.enabled": true,
   "gitlens.codeLens.enabled": false, // true会导致文件保存时 vscode来回抖动
@@ -212,23 +213,19 @@
       "text": "TODO"
     }
   ],
-  // vitest
-  // "vitest.shellType": "terminal", // windows only see: https://github.com/vitest-dev/vscode/issues/486
+  "liveServer.settings.donotVerifyTags": true,
   // volar
-  "vue.codeActions.enabled": true,
-  // 状态栏不显示name casing信息
-  "vue.complete.casing.status": false,
   // 自动添加.value
   "vue.autoInsert.dotValue": true,
   // 显示缺失的必填prop
   "vue.inlayHints.missingProps": true,
-  // 显示缺失的行内函数的event argument
-  "vue.inlayHints.inlineHandlerLeading": true,
-  // file associations
+  // #endregion
+  // #region file associations
   "files.associations": {
     "*.json": "jsonc"
   },
-  // file nesting
+  // #endregion
+  // #region file nesting
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": true,
   "explorer.fileNesting.patterns": {
@@ -291,5 +288,11 @@
     "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
-  }
+  },
+  // #endregion
+  // #region special
+  // "extensions.gallery.serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery", // Enable this when not using VSCode
+  // #endregion
+  // #region inactive
+  // #endregion
 }

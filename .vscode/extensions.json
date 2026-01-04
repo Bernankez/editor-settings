@@ -1,52 +1,51 @@
 {
-    "recommendations": [
-        /** necessary **/
-        "antfu.icons-carbon", // product icon theme
-        "file-icons.file-icons", // icon theme
-        "antfu.theme-vitesse", // theme
-        "MS-CEINTL.vscode-language-pack-zh-hans", // 中文
-        "streetsidesoftware.code-spell-checker",
-        "usernamehw.errorlens", // show error inline
-        "dbaeumer.vscode-eslint",
-        "antfu.iconify",
-        "Vue.volar",
-        "vitest.explorer",
-        "eamodio.gitlens",
-        "mhutchie.git-graph",
-        "MariusAlchimavicius.json-to-ts",
-        "antfu.unocss",
-        "christian-kohler.path-intellisense",
-        /** recommended **/
-        "astro-build.astro-vscode", // Astro
-        "lokalise.i18n-ally", // i18n
-        "ritwickdey.LiveServer", // launch a live server for static html
-        "wayou.vscode-todo-highlight",
-        "naumovs.color-highlight",
-        "kisstkondoros.vscode-gutter-preview",
-        "wix.vscode-import-cost",
-        "rangav.vscode-thunder-client", // VSCode only
-        "johnsoncodehk.vscode-tsconfig-helper", // check what files tsconfig contains.
-        // "stylelint.vscode-stylelint", // lint for css // sunset. I'm not using it
-        "yoavbls.pretty-ts-errors", // friendly ts error prompt
-        "antfu.goto-alias", // go to defination alias for auto-import
-        "antfu.pnpm-catalog-lens", // show versions inline for `catalog:` fields
-        // markdown
-        "Nuxt.mdc",
-        "unifiedjs.vscode-mdx",
-        "Amour1688.ts-in-markdown", // language support for ts in markdown
-        /** up to me **/
-        "adpyke.codesnap",
-        "oderwat.indent-rainbow",
-        "WallabyJs.quokka-vscode",
-        "iceworks-team.iceworks-time-master",
-        "lixianmin.git-stats", // git contribution graph
-        // glsl
-        "GeForceLegend.vscode-glsl",
-        "raczzalan.webgl-glsl-editor",
-        // learning
-        "labuladong.leetcode-helper",
-        // ai (If not using cursor or copilot)
-        // "Continue.continue", // auto completions with DeepSeek
-        // "RooVeterinaryInc.roo-cline", // chat/compose with DeepSeek
-    ]
+  "recommendations": [
+    /** necessary **/
+    "antfu.icons-carbon", // product icon theme
+    "file-icons.file-icons", // icon theme
+    "antfu.theme-vitesse", // theme
+    "MS-CEINTL.vscode-language-pack-zh-hans", // 中文
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens", // show error inline
+    "dbaeumer.vscode-eslint",
+    "antfu.iconify",
+    "Vue.volar",
+    "vitest.explorer",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "MariusAlchimavicius.json-to-ts",
+    "antfu.unocss",
+    "christian-kohler.path-intellisense",
+    /** recommended **/
+    "astro-build.astro-vscode", // Astro
+    "lokalise.i18n-ally", // i18n
+    "ritwickdey.LiveServer", // launch a live server for static html
+    "wayou.vscode-todo-highlight",
+    "naumovs.color-highlight",
+    "kisstkondoros.vscode-gutter-preview",
+    "wix.vscode-import-cost",
+    "rangav.vscode-thunder-client", // VSCode only
+    "johnsoncodehk.vscode-tsconfig-helper", // check what files tsconfig contains.
+    // "stylelint.vscode-stylelint", // lint for css // sunset. I'm not using it
+    "yoavbls.pretty-ts-errors", // friendly ts error prompt
+    "antfu.goto-alias", // go to defination alias for auto-import
+    "antfu.pnpm-catalog-lens", // show versions inline for `catalog:` fields
+    // markdown
+    "Nuxt.mdc",
+    "unifiedjs.vscode-mdx",
+    "Amour1688.ts-in-markdown", // language support for ts in markdown
+    /** up to me **/
+    "oderwat.indent-rainbow",
+    "WallabyJs.quokka-vscode",
+    "lixianmin.git-stats", // git contribution graph
+    // glsl
+    "GeForceLegend.vscode-glsl",
+    "raczzalan.webgl-glsl-editor",
+    // learning
+    "labuladong.leetcode-helper",
+    // ai (If not using cursor or copilot)
+    // "Continue.continue", // auto completions with DeepSeek
+    // "RooVeterinaryInc.roo-cline", // chat/compose with DeepSeek
+    // "Supermaven.supermaven", // Cursor Tab alternative
+  ]
 }
