@@ -26,7 +26,7 @@
     "wix.vscode-import-cost",
     "rangav.vscode-thunder-client", // VSCode only
     "johnsoncodehk.vscode-tsconfig-helper", // check what files tsconfig contains.
-    // "stylelint.vscode-stylelint", // lint for css // sunset. I'm not using it
+    // "stylelint.vscode-stylelint", // lint for css // I'm not using it now
     "yoavbls.pretty-ts-errors", // friendly ts error prompt
     "antfu.goto-alias", // go to defination alias for auto-import
     "antfu.pnpm-catalog-lens", // show versions inline for `catalog:` fields
@@ -34,6 +34,7 @@
     "Nuxt.mdc",
     "unifiedjs.vscode-mdx",
     "Amour1688.ts-in-markdown", // language support for ts in markdown
+    "bierner.markdown-mermaid", // markdown preview mermaid support
     /** up to me **/
     "oderwat.indent-rainbow",
     "WallabyJs.quokka-vscode",
