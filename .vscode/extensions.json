@@ -35,6 +35,7 @@
     "unifiedjs.vscode-mdx",
     "Amour1688.ts-in-markdown", // language support for ts in markdown
     "bierner.markdown-mermaid", // markdown preview mermaid support
+    "bierner.markdown-checkbox", // markdown preview checkbox support
     /** up to me **/
     "oderwat.indent-rainbow",
     "WallabyJs.quokka-vscode",
