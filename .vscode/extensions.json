@@ -24,7 +24,6 @@
     "naumovs.color-highlight",
     "kisstkondoros.vscode-gutter-preview",
     "wix.vscode-import-cost",
-    "rangav.vscode-thunder-client", // VSCode only
     "johnsoncodehk.vscode-tsconfig-helper", // check what files tsconfig contains.
     // "stylelint.vscode-stylelint", // lint for css // I'm not using it now
     "yoavbls.pretty-ts-errors", // friendly ts error prompt
@@ -46,8 +45,8 @@
     // learning
     "labuladong.leetcode-helper",
     // ai (If not using cursor or copilot)
-    // "Continue.continue", // auto completions with DeepSeek
-    // "RooVeterinaryInc.roo-cline", // chat/compose with DeepSeek
+    "Anthropic.claude-code",
+    "openai.chatgpt"
     // "Supermaven.supermaven", // Cursor Tab alternative
   ]
 }
