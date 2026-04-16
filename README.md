@@ -7,7 +7,6 @@
 [`.vscode/settings.json`](.vscode/settings.json) Settings<br>
 [`.vscode/extensions.json`](.vscode/extensions.json) Extensions<br>
 [`.vscode/global.code-snippets`](.vscode/global.code-snippets) Snippets<br>
-[`.continue/config.json`](.continue/config.json) `Continue` settings for VSCode extension<br>
 
 <br>
 <p align="center">
