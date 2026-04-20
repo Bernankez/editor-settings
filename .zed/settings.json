@@ -8,118 +8,184 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // color theme
-  "buffer_font_family": "Maple Mono Normal NL NF CN",
-  "buffer_font_fallbacks": ["Menlo", "Monaco", "Courier New", "monospace"],
-  "buffer_font_size": 18,
+  "buffer_font_family": "Maple Mono Normal NL NF CN", // 编辑器字体
+  "buffer_font_fallbacks": ["Menlo", "Monaco", "Courier New", "monospace"], // 备用字体
+  "buffer_font_size": 18, // 编辑器字号
   "icon_theme": {
-    "mode": "system",
+    "mode": "system", // 跟随系统深浅色
     "light": "JetBrains New UI Icons (Light)",
-    "dark": "JetBrains New UI Icons (Dark)"
+    "dark": "JetBrains New UI Icons (Dark)",
   },
   "theme": {
-    "mode": "system",
+    "mode": "system", // 跟随系统深浅色
     "light": "Vitesse Refined Light",
-    "dark": "Vitesse Refined Dark"
+    "dark": "Vitesse Refined Dark",
   },
-  "ui_font_size": 16,
+  "ui_font_size": 16, // UI 界面字号
   // editor
+  "git_panel": {
+    "dock": "right", // Git 面板停靠在右侧
+  },
   "outline_panel": {
-    "dock": "right"
+    "dock": "right", // 大纲面板停靠在右侧
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "right", // 项目面板停靠在右侧
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 1500
-    }
+      "milliseconds": 1500, // 1.5 秒后自动保存
+    },
   },
-  "auto_indent_on_paste": false,
-  "base_keymap": "VSCode",
+  "auto_indent_on_paste": false, // 是否粘贴时自动缩进
+  "base_keymap": "VSCode", // 使用 VSCode 快捷键方案
   "buffer_font_features": {
-    "calt": 0
+    "calt": 0, // 关闭连字特性
   },
-  "ensure_final_newline_on_save": false,
+  "ensure_final_newline_on_save": false, // 是否保存时自动添加末尾换行
   "inlay_hints": {
-    "enabled": true,
-    "show_value_hints": true,
-    "show_type_hints": true,
-    "show_parameter_hints": true,
-    "show_other_hints": true,
-    "show_background": false,
-    "edit_debounce_ms": 700,
-    "scroll_debounce_ms": 50,
+    "enabled": true, // 是否启用内嵌提示
+    "show_value_hints": true, // 是否显示值提示
+    "show_type_hints": true, // 是否显示类型提示
+    "show_parameter_hints": true, // 是否显示参数提示
+    "show_other_hints": true, // 是否显示其他提示
+    "show_background": false, // 是否显示提示背景色
+    "edit_debounce_ms": 700, // 编辑后 700ms 更新提示
+    "scroll_debounce_ms": 50, // 滚动后 50ms 更新提示
     "toggle_on_modifiers_press": {
       "control": false,
       "alt": false,
       "shift": false,
       "platform": false,
-      "function": false
-    }
+      "function": false,
+    },
   },
-  "linked_edits": true,
+  "linked_edits": true, // 是否启用联动编辑（如重命名 HTML 标签对）
   "minimap": {
-    "show": "auto",
-    "thumb": "always"
+    "show": "auto", // 自动显示小地图
+    "thumb": "always", // 始终显示滚动条缩略图
   },
-  "show_whitespaces": "boundary",
-  "tab_size": 2,
+  "show_whitespaces": "boundary", // 仅在边界处显示空白字符
+  "tab_size": 2, // Tab 缩进 2 空格
   "terminal": {
-    "font_family": "Menlo",
-    "font_fallbacks": ["Monaco", "Courier New", "monospace"],
-    "font_size": 15.0
+    "font_family": "Menlo", // 终端字体
+    "font_fallbacks": ["Monaco", "Courier New", "monospace"], // 终端备用字体
+    "font_size": 15.0, // 终端字号
   },
-  "use_system_path_prompts": true,
+  "use_system_path_prompts": true, // 是否使用系统打开/保存弹窗
   // lint
   "code_actions_on_format": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true, // 是否格式化时自动修复 ESLint 问题
   },
   // ai
   "agent": {
-    "use_modifier_to_send": true,
+    "use_modifier_to_send": false, // 是否按修饰键发送消息
     "default_model": {
-      "provider": "OneHub",
-      "model": "gebmini-2.5-flash"
+      "provider": "Xiaomi MiMo", // 默认 AI 提供商
+      "model": "mimo-v2-pro", // 默认模型
     },
-    "dock": "left"
+    "dock": "left", // Agent 面板停靠在左侧
   },
+  "show_edit_predictions": true, // 是否显示编辑预测
   "edit_predictions": {
-    "mode": "subtle",
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null,
-      "enterprise_uri": null
+    "mode": "eager", // 积极模式，尽早显示预测
+    "provider": "open_ai_compatible_api", // 使用 OpenAI 兼容 API
+    "open_ai_compatible_api": {
+      "api_url": "http://localhost:1234/v1/completions", // LM Studio 本地服务
+      "model": "sweep-next-edit-1.5b-mlx", // 本地编辑预测模型
+      "prompt_format": "qwen", // 提示词格式
+      "max_output_tokens": 256, // 最大输出 token 数
     },
-    "enabled_in_text_threads": false
-  },
-  "features": {
-    "edit_prediction_provider": "supermaven"
   },
   "language_models": {
     "openai_compatible": {
-      "OneHub": {
-        "api_url": "https://onehub.keke.cc/v1",
+      "GLM": {
+        // 智谱 GLM Coding Plan
+        "api_url": "https://open.bigmodel.cn/api/coding/paas/v4",
         "available_models": [
           {
-            "name": "gemini-2.5-flash",
-            "display_name": null,
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000,
+            "name": "glm-5.1",
+            "display_name": "GLM-5.1",
+            "max_tokens": 200000, // 上下文窗口 200K
+            "max_output_tokens": 131072,
+            "max_completion_tokens": 131072,
+            "capabilities": {
+              "tools": true, // 是否支持工具调用
+              "images": false, // 是否支持图像输入
+              "parallel_tool_calls": true, // 是否支持并行工具调用
+              "prompt_cache_key": true, // 是否支持提示缓存
+            },
+          },
+          {
+            "name": "glm-4.7",
+            "display_name": "GLM-4.7",
+            "max_tokens": 200000, // 上下文窗口 200K
+            "max_output_tokens": 131072,
+            "max_completion_tokens": 131072,
             "capabilities": {
               "tools": true,
-              "images": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+            },
+          },
+        ],
+      },
+      "Xiaomi MiMo": {
+        // 小米 MiMo Token Plan
+        "api_url": "https://token-plan-cn.xiaomimimo.com/v1",
+        "available_models": [
+          {
+            "name": "mimo-v2-pro",
+            "display_name": "MiMo V2 Pro",
+            "max_tokens": 256000, // 上下文窗口 256K
+            "max_output_tokens": 131072,
+            "max_completion_tokens": 131072,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+            },
+          },
+        ],
+      },
+      "Meituan LongCat": {
+        // 美团 LongCat
+        "api_url": "https://api.longcat.chat/openai",
+        "available_models": [
+          {
+            "name": "LongCat-Flash-Chat",
+            "display_name": "LongCat Flash Chat",
+            "max_tokens": 131072, // 上下文窗口 128K
+            "max_output_tokens": 8192, // 最大输出 8K
+            "max_completion_tokens": 8192,
+            "capabilities": {
+              "tools": true,
+              "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": false
-            }
-          }
-        ]
-      }
-    }
+              "prompt_cache_key": false,
+            },
+          },
+          {
+            "name": "LongCat-Flash-Thinking-2601",
+            "display_name": "LongCat Flash Thinking",
+            "max_tokens": 131072, // 上下文窗口 128K
+            "max_output_tokens": 8192, // 最大输出 8K（含思考过程）
+            "max_completion_tokens": 8192,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+            },
+          },
+        ],
+      },
+    },
   },
-  "show_edit_predictions": true,
   // file associations
   "file_types": {
-    "jsonc": ["*.json"]
-  }
+    "jsonc": ["*.json"], // 所有 .json 文件视为 JSONC（允许注释）
+  },
 }
